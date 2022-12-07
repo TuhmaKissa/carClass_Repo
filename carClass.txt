@@ -53,7 +53,7 @@ Car methods
 
     public static void main(String[] args) {
         Creating Car object
-        Car car1= new Car(Dacia,500, 50 );
+        Car car1= new Car(Dacia,700, 50 );
         car1.printData();
         car1.accelerate();
         car1.brake();
