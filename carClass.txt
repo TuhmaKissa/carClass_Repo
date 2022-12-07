@@ -1,0 +1,77 @@
+import java.util.;
+public class Car {
+    String brand;
+    String model;
+    int amountOfFuel;
+    int amount;
+
+   creating Car object default constructor for object to inherit attributes of class.
+   public Car(String brand, String model, int amountOfFuel) {
+        this.brand = brand;
+        this.model = model;
+        this.amountOfFuel = amountOfFuel;
+    }
+Car methods
+    public void brake()
+    {
+        System.out.println(Car is breaking);
+    }
+    public void accelerate()
+    {
+        if (amountOfFuel = 0)
+        {
+            System.out.println(out of fuel, car will not accelerate);
+
+        }
+        else
+        {
+            System.out.println(Car is accelerating);
+            amountOfFuel = amountOfFuel - 1;
+        }
+
+    }
+
+    public void printData()
+    {
+        System.out.println(brand  + brand);
+        System.out.println(model  + model);
+        System.out.println(fuel  + amountOfFuel);
+
+
+    }
+    public void refuel(int amount) {
+        Scanner userAmount=new Scanner(System.in);
+        System.out.println(Fuel on  tank + amountOfFuel);
+        System.out.println(Refuel + amount);
+        amountOfFuel += amountOfFuel + amount;
+        System.out.println(Fuel on  tank + amountOfFuel);
+
+
+
+
+    }
+
+    public static void main(String[] args) {
+        Creating Car object
+        Car car1= new Car(Fiat,500, 50 );
+        car1.printData();
+        car1.accelerate();
+        car1.brake();
+        car1.printData();
+
+        Car car2= new Car(Mercedes,xx, 24 );
+        car2.printData();
+        car2.accelerate();
+        car2.brake();
+        car2.printData();
+
+
+
+    }
+
+}
+
+
+
+
+
